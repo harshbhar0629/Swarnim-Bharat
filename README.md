@@ -1,5 +1,6 @@
 # स्वर्णिम भारत
-![image]https://github-production-user-asset-6210df.s3.amazonaws.com/150599739/342431235-b1841a04-6ea8-4954-ae89-0ec833e838e0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241009T192020Z&X-Amz-Expires=300&X-Amz-Signature=9359dc5b733ebcae61f220043ce5401e3c14daf38c1faf04acc08e63c40e5e8c&X-Amz-SignedHeaders=host
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/150599739/342431235-b1841a04-6ea8-4954-ae89-0ec833e838e0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241009T192020Z&X-Amz-Expires=300&X-Amz-Signature=9359dc5b733ebcae61f220043ce5401e3c14daf38c1faf04acc08e63c40e5e8c&X-Amz-SignedHeaders=host
+" />
 
 स्वर्णिम भारत is a React-based web application showcasing the rich heritage of India. This project aims to provide an interactive and informative platform for users to explore India's cultural diversity, historical landmarks, and traditional heritage.
 
@@ -66,10 +67,3 @@ npm start
 - [Reactstrap](https://reactstrap.github.io/)
 - [React-Speech](https://www.npmjs.com/package/react-speech)
 - [Google Map React](https://github.com/google-map-react/google-map-react)
-
-![image](https://github.com/harshbhar0629/Swarnim-Bharat/assets/150599739/541f9633-f611-4fa7-846b-3d4278d8c401)
-![image](https://github.com/harshbhar0629/Swarnim-Bharat/assets/150599739/18336c36-1851-409c-83fc-3aa3a7fba373)
-![image](https://github.com/harshbhar0629/Swarnim-Bharat/assets/150599739/8e28e1f7-edb6-43f3-98a7-e131560ee307)
-![image](https://github.com/harshbhar0629/Swarnim-Bharat/assets/150599739/f5f05b27-3f24-4ece-b049-8629855d861d)
-
-
