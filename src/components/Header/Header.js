@@ -102,6 +102,9 @@ const Header = () => {
 									<Button className="btn primary__btn">
 										<Link to="/">Explore</Link>
 									</Button>
+									<Button className="btn primary__btn">
+										<Link to="/login">Register</Link>
+									</Button>
 								</>
 							</div>
 
