@@ -91,9 +91,9 @@ const Home = () => {
 			<section>
 				<Container>
 					<Row>
-						<Col lg="3">
+						<Col lg="6">
 							<h5 className="services__subtitle">What we serve</h5>
-							<h2 className="services__title">We describes our culture as</h2>
+							<h2 className="services__title" style={{marginTop: "-10px"}}>We describes our culture as</h2>
 						</Col>
 						<Category />
 					</Row>
@@ -109,7 +109,7 @@ const Home = () => {
 							<div
 								style={{
 									display: "flex",
-									justifyContent: "center",
+									justifyContent: "flex-start",
 									alignItems: "center",
 									gap: "10px",
 									marginTop: "-20px",

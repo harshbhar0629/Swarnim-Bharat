@@ -269,26 +269,7 @@ import img17 from "../images/17.jpg";
 import img18 from "../images/18.jpg";
 import img19 from "../images/19.jpg";
 import img20 from "../images/20.jpg";
-// import img21 from "../images/21_Qutub Minar.jpg";
-// import img22 from "../images/22_Mountain Railways of India.jpg";
-// import img23 from "../images/23_Mahabodhi Temple Complex of Bodh Gaya, Bihar.jpg";
-// import img24 from "../images/24_Bhimbetka-Rock-Shelters.jpg";
-// import img25 from "../images/25_Champaner-Pavagadh Archaeological Park, Gujarat.jpg";
-// import img26 from "../images/26_Chhatrapati-Shivaji-Terminus-CST.jpg";
-// import img27 from "../images/27_Red-Fort.jpg";
-// import img28 from "../images/28.-Jantar-Mantar-jaipur_528941008.jpg";
-// import img29 from "../images/29_Western Ghats.jpg";
-// import img30 from "../images/30_hillfort.jpg";
-// import img31 from "../images/31_Great Himalayan National Park, Himachal Pradesh.jpg";
-// import img32 from "../images/32_Rani-ka-Vav, Patan, Gujarat.jpg";
-// import img33 from "../images/33_Archaeological Site of Nalanda Mahavihara in Nalanda, Bihar.jpg";
-// import img34 from "../images/34_Khangchendzonga National Park, Sikkim.jpg";
-// import img35 from "../images/35_Capitol-Complex.jpg";
-// import img36 from "../images/36_Historic City of Ahmedabad, Gujarat.jpg";
-// import img37 from "../images/37-Victorian-and-Art-Deco-Ensembles-of-Mumbai_1415490278.jpg";
-// import img38 from "../images/38_jaipur-city.jpg";
-// import img39 from "../images/39_Dholavira A Harappan City.jpg";
-// import img40 from "../images/40_Ramappa-Temple-telangana.jpg";
+
 
 import img01_subimg01 from "../images/1_01_fatehpur_sikri.jpg";
 import img01_subimg02 from "../images/1_02_Bhatarpur.jpg";
