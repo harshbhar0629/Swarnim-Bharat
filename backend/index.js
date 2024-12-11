@@ -46,7 +46,7 @@ app.get("/", (req, res) => {
 	});
 });
 
-app.get("/api/v1/auth", userRoutes);
+app.use("/api/v1/auth", userRoutes);
 
 // Listening to the server
 app.listen(PORT, () => {

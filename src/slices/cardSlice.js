@@ -8,7 +8,7 @@ const initialState = {
 	ratingAndReview: null,
 };
 
-const authSlice = createSlice({
+const cartSlice = createSlice({
 	name: "card",
 	initialState: initialState,
 	reducers: {
@@ -24,6 +24,6 @@ const authSlice = createSlice({
 	},
 });
 
-export const { setCardData, setLoading, setRatingAndReview } = authSlice.actions;
+export const { setCardData, setLoading, setRatingAndReview } = cartSlice.actions;
 
-export default authSlice.reducer;
+export default cartSlice.reducer;

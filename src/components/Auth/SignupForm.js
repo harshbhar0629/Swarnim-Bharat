@@ -3,11 +3,14 @@
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { signUp } from "../../utils/authAPI";
 
 function SignupForm() {
 	const navigate = useNavigate();
+	const dispatch = useDispatch();
 
 	const [formData, setFormData] = useState({
 		firstName: "",
@@ -38,6 +41,8 @@ function SignupForm() {
 			toast.error("Passwords Do Not Match");
 			return;
 		}
+		console.log(firstName, lastName);
+		dispatch(signUp(firstName, lastName, email, password, confirmPassword, navigate));
 
 		// Reset
 		setFormData({

@@ -11,6 +11,8 @@
 # production
 /build
 
+.env
+
 # misc
 .env.local
 .env.development.local

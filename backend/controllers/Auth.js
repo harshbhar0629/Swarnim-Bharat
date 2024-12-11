@@ -9,6 +9,7 @@ require("dotenv").config();
 // Signup Controller for Registering USers
 
 exports.signup = async (req, res) => {
+	console.log("INDISE SIGNUP");
 	try {
 		// fetch all data from the request body
 		const {
@@ -31,7 +32,7 @@ exports.signup = async (req, res) => {
 			});
 		}
 
-		if (!email.includes("@gmail.com")) {
+		if (!email.includes("@gmail")) {
 			return res.status(400).send({
 				success: false,
 				message: "Invalid Email!",
