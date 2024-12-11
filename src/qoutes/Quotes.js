@@ -33,23 +33,34 @@ const Quotes = () => {
         ]
     }
     return (
-        <Slider {...settings}>
-            <div className='quote'>
-                <h1>Walking up in <span className='highlight'>India</span> is like walking up to life itself.</h1>
-                <span className='author'>- Mark Twain</span>
-            </div>
+			<Slider
+				{...settings}
+				style={{ backgroundColor: "rgb(245, 240, 240)" }}>
+				<div className="quote">
+					<h1>
+						Walking up in <span className="highlight">India</span> is like
+						walking up to life itself.
+					</h1>
+					<span className="author">- Mark Twain</span>
+				</div>
 
-            <div className='quote'>
-                <h1>India lives in <span className='highlight'>several centuries</span> at the same time.</h1>
-                <span className='author'>- Arundhati Roy</span>
-            </div>
+				<div className="quote">
+					<h1>
+						India lives in <span className="highlight">several centuries</span>{" "}
+						at the same time.
+					</h1>
+					<span className="author">- Arundhati Roy</span>
+				</div>
 
-            <div className='quote'>
-                <h1>India is land of <span className='highlight'>sprituality</span> and vibrant <span className='highlight'>festivals</span>.</h1>
-                <span className='author'>- Steve Jobs</span>
-            </div>
-        </Slider>
-    )
+				<div className="quote">
+					<h1>
+						India is land of <span className="highlight">sprituality</span> and
+						vibrant <span className="highlight">festivals</span>.
+					</h1>
+					<span className="author">- Steve Jobs</span>
+				</div>
+			</Slider>
+		);
 }
 
 export default Quotes

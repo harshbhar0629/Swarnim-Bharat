@@ -1,0 +1,29 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: rgb(245, 240, 240);
+  color: black;
+  padding: 1.25rem;
+}
+
+.contact-item {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.contact-item .heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.contact-item .description {
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.contact-item .details {
+  font-weight: 600;
+  margin-top: -10px;
+}

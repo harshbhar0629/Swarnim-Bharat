@@ -19,6 +19,10 @@ const nav__links = [
 		path: "/heritage",
 		display: "Heritage",
 	},
+	{
+		path: "/contact",
+		display: "Contact-Us"
+	}
 ];
 
 const Header = () => {
@@ -103,7 +107,7 @@ const Header = () => {
 										<Link to="/">Explore</Link>
 									</Button>
 									<Button className="btn primary__btn">
-										<Link to="/login">Register</Link>
+										<Link to="/login">Sign-in</Link>
 									</Button>
 								</>
 							</div>

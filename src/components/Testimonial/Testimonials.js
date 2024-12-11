@@ -34,7 +34,7 @@ const Testimoials = () => {
         ]
     }
     return (
-        <Slider {...settings}>
+        <Slider {...settings} className="shadow-lg" style={{marginRight: "10px"}}>
             <div className='testimonial py-4 px-3'>
                 <p>"Swarnim Bharat embodies the golden spirit of our nation, where ancient wisdom and modern aspirations intertwine to create a tapestry of unparalleled beauty."</p>
 

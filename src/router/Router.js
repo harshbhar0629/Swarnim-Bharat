@@ -7,6 +7,7 @@ import HeritageDetails from '../pages/HeritageDetails'
 import About from '../pages/About'
 import LoginPage from "../components/Auth/LoginPage"
 import SignupPage from '../components/Auth/SignupPage'
+import ContactUs from '../pages/ContactUs'
 
 
 const Routers = () => {
@@ -21,7 +22,7 @@ const Routers = () => {
             <Route path='/heritage' element={<Heritage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path='/signup' element={<SignupPage />} />
-          
+            <Route path="/contact" element={<ContactUs />} />
 
             <Route path='/heritage/:id' element={<HeritageDetails />} />
 
