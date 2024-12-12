@@ -21,7 +21,7 @@ function TermsAndConditions() {
 					border: "1px solid black",
 					width: "70%",
 					paddingLeft: "20px",
-					marginTop: "5px",
+					marginTop: "30px",
 				}}>
 				<section className="container  px-4 py-5">
 					<h1

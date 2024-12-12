@@ -5,6 +5,9 @@ import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import CountryCode from "../../assets/data/countrycode.json";
 import { useLocation } from "react-router-dom";
+import toast from "react-hot-toast"
+import { apiConnector } from "../../utils/apiConnector";
+import { endpoints } from "../../utils/apis";
 
 const ContactUsForm = ({ border }) => {
 	const location = useLocation();
@@ -21,6 +24,22 @@ const ContactUsForm = ({ border }) => {
 
 	const submitContactForm = async (data) => {
 		console.log("Form Data - ", data);
+		const toastId = toast.loading("Loading...");
+		try {
+			const { CONTACT_US } = endpoints;
+			setLoading(true);
+			const res = await apiConnector(
+				"POST",
+				CONTACT_US,
+				data
+			);
+			toast.success("Message sent successfully!");
+			console.log("Email Res - ", res);
+		} catch (error) {
+			console.log("ERROR MESSAGE - ", error.message);
+			setLoading(false);
+		}
+		toast.dismiss(toastId);
 		setLoading(false);
 	};
 

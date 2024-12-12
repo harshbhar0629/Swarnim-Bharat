@@ -8,6 +8,7 @@ const cors = require("cors");
 const { cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 const userRoutes = require("./routes/userRoutes");
+const contactUsRoute = require("./routes/contactRoute");
 
 // Loading environment variables from .env file
 require("dotenv").config();
@@ -47,6 +48,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/v1/auth", userRoutes);
+app.use("/api/v1", contactUsRoute);
 
 // Listening to the server
 app.listen(PORT, () => {

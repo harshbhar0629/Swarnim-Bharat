@@ -36,6 +36,7 @@ const Newsletter = () => {
 										borderRadius: "10px",
 									}}
 									type="email"
+									value={email}
 									onChange={(e) => setEmail(e.target.value)}
 									placeholder="Enter your email"
 								/>

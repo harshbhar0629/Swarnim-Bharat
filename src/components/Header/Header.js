@@ -106,7 +106,7 @@ const Header = () => {
 								{!token ? (
 									<>
 										<Button className="btn primary__btn">
-											<Link to="/">Explore</Link>
+											<Link to="/login">Explore</Link>
 										</Button>
 										<Button className="btn primary__btn">
 											<Link to="/login">Sign-in</Link>
@@ -114,7 +114,12 @@ const Header = () => {
 									</>
 								) : (
 									<>
-										<Button className="btn primary__btn" onClick={()=> dispatch(logout(navigate, null))}>
+										<Button className="btn primary__btn">
+											<Link to="/card/new">Create Card</Link>
+										</Button>
+										<Button
+											className="btn primary__btn"
+											onClick={() => dispatch(logout(navigate, null))}>
 											<Link to="/">LogOut</Link>
 										</Button>
 									</>

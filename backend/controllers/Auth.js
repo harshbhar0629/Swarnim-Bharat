@@ -81,6 +81,7 @@ exports.signup = async (req, res) => {
 exports.login = async (req, res) => {
 	try {
 		// Get email and password from request body
+		console.log("INDISE LOGIN")
 		const { email, password } = req.body;
 
 		// Check if email or password is missing
