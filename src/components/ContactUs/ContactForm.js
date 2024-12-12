@@ -6,7 +6,7 @@ import "./ContactForm.css";
 
 const ContactForm = () => {
 	return (
-		<div className="contact-form-container shadow-lg" style={{color: "black"}} >
+		<div className="contact-form-container" style={{color: "black"}} >
 			<h1 className="contact-form-heading">
 				Got an Idea? We&apos;ve got the skills. Let&apos;s team up
 			</h1>

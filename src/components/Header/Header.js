@@ -2,9 +2,11 @@
 
 import React, { useRef, useEffect } from "react";
 import { Container, Row, Button } from "reactstrap";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/lg.png";
 import "./header.css";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "../../utils/authAPI";
 
 const nav__links = [
 	{
@@ -21,13 +23,16 @@ const nav__links = [
 	},
 	{
 		path: "/contact",
-		display: "Contact-Us"
-	}
+		display: "Contact-Us",
+	},
 ];
 
 const Header = () => {
 	const headerRef = useRef(null);
 	const menuRef = useRef(null);
+	const navigate = useNavigate();
+	const dispatch = useDispatch();
+	const { token } = useSelector((state) => state.auth);
 
 	const stickyheaderFunc = () => {
 		let head = document.getElementById("head");
@@ -98,18 +103,22 @@ const Header = () => {
 
 						<div className="nav__right d-flex align-items-center gap-4">
 							<div className="nav__btns d-flex align-items-center gap-4">
-								<>
-									{/* <Button className='btn secondary__btn'>
-                                        <Link to='/login'>Login</Link>
-                                    </Button> */}
-
-									<Button className="btn primary__btn">
-										<Link to="/">Explore</Link>
-									</Button>
-									<Button className="btn primary__btn">
-										<Link to="/login">Sign-in</Link>
-									</Button>
-								</>
+								{!token ? (
+									<>
+										<Button className="btn primary__btn">
+											<Link to="/">Explore</Link>
+										</Button>
+										<Button className="btn primary__btn">
+											<Link to="/login">Sign-in</Link>
+										</Button>
+									</>
+								) : (
+									<>
+										<Button className="btn primary__btn" onClick={()=> dispatch(logout(navigate, null))}>
+											<Link to="/">LogOut</Link>
+										</Button>
+									</>
+								)}
 							</div>
 
 							<span

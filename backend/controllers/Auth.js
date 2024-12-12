@@ -5,6 +5,7 @@ const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 // const mailSender = require("../utils/mailSender");
 require("dotenv").config();
+const Card = require("../models/Cards");
 
 // Signup Controller for Registering USers
 
@@ -59,7 +60,8 @@ exports.signup = async (req, res) => {
 			password: hashedPassword,
 			image: `https://api.dicebear.com/5.x/initials/svg?seed=${firstName} ${lastName}`,
 		});
-
+		console.log("Outside signup");
+		
 		return res.status(200).json({
 			success: true,
 			user,
@@ -91,7 +93,9 @@ exports.login = async (req, res) => {
 		}
 
 		// Find user exist or not for this email
-		const user = await User.findOne({ email }).populate("Cards");
+		const user = await User.findOne({ email });
+		// const cards = await Card.findAll({ owner: user._id });
+		// console.log(cards);
 
 		// If user not found
 		if (!user) {

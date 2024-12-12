@@ -26,8 +26,7 @@ export function login(email, password, navigate, refFromSignup) {
             if(!refFromSignup) toast.success("Login Successful");
 			dispatch(setToken(response.data.token));
 			
-			localStorage.setItem("token", JSON.stringify(response.data.token));
-			localStorage.setItem("user", JSON.stringify(response.data.user)); // now i'm able to understand the significance of local storage
+			localStorage.setItem("token", JSON.stringify(response.data.token)); // now i'm able to understand the significance of local storage
 			navigate("/");
 		} catch (error) {
 			console.log("LOGIN API ERROR............", error);
@@ -73,5 +72,15 @@ export function signUp(
 		}
 		dispatch(setLoading(false));
 		toast.dismiss(toastId);
+	};
+}
+
+export function logout(navigate, flag) {
+	return (dispatch) => {
+		dispatch(setToken(null));
+		localStorage.removeItem("token");
+		if (flag === null || flag === undefined || flag !== true)
+			toast.success("Logged Out");
+		navigate("/");
 	};
 }

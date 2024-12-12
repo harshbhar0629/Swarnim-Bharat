@@ -1,0 +1,96 @@
+/* PrivacyPolicy.css */
+.privacy-container {
+    max-width: 990px;
+    margin: 40px auto;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eff5fa;
+    color: black;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    line-height: 1.8;
+    transition: transform 1s, box-shadow 0.8s;
+}
+
+.privacy-section {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: none;
+    transition: background-color 0.3s, color 0.3s;
+    color: black;
+}
+
+.privacy-section:hover {
+    background-color: #ebf5ff;
+    color: black;
+}
+
+.privacy-section p {
+    color: inherit;
+    /* Ensure p elements inherit the color of the section */
+}
+
+.privacy-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+}
+
+.privacy-container h1 {
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 800;
+}
+
+.privacy-container h2 {
+    font-size: 1.8em;
+    color: black;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d8dee4;
+    transition: color 0.3s;
+}
+
+.privacy-container h2:hover {
+    color: #1b1b1b;
+}
+
+.privacy-container p:hover {
+    color: #1b1b1b;
+}
+
+.privacy-container p {
+    font-size: 1.15em;
+    color: black;
+    margin: 20px 0;
+}
+
+.privacy-container section {
+    margin-bottom: 30px;
+}
+
+.privacy-container section:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-container a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.privacy-container a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+}

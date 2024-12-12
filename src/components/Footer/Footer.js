@@ -16,7 +16,11 @@ const quick__links = [
     {
         path: '/heritage',
         display: 'Heritage'
-    }
+	},
+	{
+		path: '/contact',
+		display: "ContactUs"
+	}
 ]
 
 const quick__links2 = [
@@ -27,7 +31,19 @@ const quick__links2 = [
     {
         path: '/',
         display: 'Explore'
-    }
+	},
+	{
+		path: "/terms",
+		display: "Terms and Conditions"
+	},
+	{
+		path: "/privacy",
+		display: "Privacy Policy"
+	},
+	{
+		path: "/faqs",
+		display: "FaQs"
+	}
 ]
 
 const Footer = () => {

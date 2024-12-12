@@ -29,7 +29,7 @@ const contactDetails = [
 
 const ContactDetails = () => {
 	return (
-		<div className="contact-container shadow-lg">
+		<div className="contact-container">
 			{contactDetails.map((ele, i) => {
 				let Icon = Icon1[ele.icon] || Icon2[ele.icon] || Icon3[ele.icon];
 				return (

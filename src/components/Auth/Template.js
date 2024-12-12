@@ -43,7 +43,7 @@ function Template({ title, description1, description2, image, formType }) {
 						</p>
 						{formType === "signup" ? <SignupForm /> : <LoginForm />}
 					</div>
-					<div className="position-relative mt-4 mt-md-0">
+					<div className="position-relative mt-4 mt-md-0 d-none d-lg-block">
 						<img
 							src={image}
 							alt="User Login Image Loading.."
