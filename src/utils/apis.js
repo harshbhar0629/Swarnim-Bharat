@@ -1,6 +1,6 @@
 /** @format */
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = "https://swarnim-bharat-backend.vercel.app/";
 
 // AUTH ENDPOINTS
 export const endpoints = {
