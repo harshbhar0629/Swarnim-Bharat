@@ -1,6 +1,6 @@
 /** @format */
 
-const BASE_URL = "https://swarnim-bharat-backend.vercel.app";
+const BASE_URL = "https://swarnim-bharat-backend.vercel.app/api/v1";
 
 // AUTH ENDPOINTS
 export const endpoints = {
