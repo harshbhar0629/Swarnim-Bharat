@@ -10,8 +10,9 @@ const fileUpload = require("express-fileupload");
 const userRoutes = require("./routes/userRoutes");
 const contactUsRoute = require("./routes/contactRoute");
 
-// Loading environment variables from .env file
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+	require("dotenv").config();
+}
 
 // Setting up port number
 const PORT = process.env.PORT || 4000;

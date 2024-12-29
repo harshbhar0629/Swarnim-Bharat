@@ -4,7 +4,10 @@ const bcrypt = require("bcrypt");
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 // const mailSender = require("../utils/mailSender");
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+	require("dotenv").config();
+}
+
 const Card = require("../models/Cards");
 
 // Signup Controller for Registering USers

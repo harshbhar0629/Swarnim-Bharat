@@ -1,7 +1,11 @@
 /** @format */
 
 const mongoose = require("mongoose");
-require("dotenv").config();
+// environment variables
+if (process.env.NODE_ENV !== "production") {
+	require("dotenv").config();
+}
+
 
 exports.dbConnect = () => {
 	mongoose
