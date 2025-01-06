@@ -42,10 +42,7 @@ cloudinaryConnect();
 
 // Testing the server
 app.get("/", (req, res) => {
-	return res.json({
-		success: true,
-		message: "Your server is up and running ...",
-	});
+	res.send("Server Working")
 });
 
 app.use("/api/v1/auth", userRoutes);
@@ -55,5 +52,9 @@ app.use("/api/v1", contactUsRoute);
 app.listen(PORT, () => {
 	console.log(`App is listening at ${PORT}`);
 });
+
+app.get("*", (req, res) => {
+	res.send("Path not found");
+})
 
 // End of code.

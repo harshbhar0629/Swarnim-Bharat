@@ -35,12 +35,6 @@ const userSchema = mongoose.Schema(
 			type: Boolean,
 			default: false,
 		},
-		cards: [
-			{
-				type: mongoose.Schema.Types.ObjectId,
-				ref: "Cards",
-			},
-		],
 		token: {
 			type: String,
 		},
