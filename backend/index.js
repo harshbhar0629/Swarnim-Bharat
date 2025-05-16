@@ -24,9 +24,17 @@ database.dbConnect();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+let url;
+if (process.env.NODE_ENV === "production") {
+	url = process.env.productionUrl;
+} else {
+	url = process.env.localUrl;
+}
+
 app.use(
 	cors({
-		origin: "*",
+		origin: url,
 		credentials: true,
 	})
 );
