@@ -67,9 +67,5 @@ if (
 	});
 }
 
-app.get("*", (req, res) => {
-	res.send("Path not found");
-});
-
 // module.exports = app;
 // End of code.
