@@ -9,10 +9,7 @@ const { cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 const userRoutes = require("./routes/userRoutes");
 const contactUsRoute = require("./routes/contactRoute");
-
-if (process.env.NODE_ENV !== "production") {
-	require("dotenv").config();
-}
+require("dotenv").config();
 
 // Setting up port number
 const PORT = process.env.PORT || 4000;
