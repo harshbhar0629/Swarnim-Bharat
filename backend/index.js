@@ -32,6 +32,8 @@ if (process.env.NODE_ENV === "production") {
 	url = process.env.localUrl;
 }
 
+console.log(url)
+
 app.use(
 	cors({
 		origin: url,
