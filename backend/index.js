@@ -42,19 +42,27 @@ cloudinaryConnect();
 
 // Testing the server
 app.get("/", (req, res) => {
-	res.send("Server Working")
+	res.send("Server Working");
 });
 
 app.use("/api/v1/auth", userRoutes);
 app.use("/api/v1", contactUsRoute);
 
 // Listening to the server
-app.listen(PORT, () => {
-	console.log(`App is listening at ${PORT}`);
-});
+if (
+	process.env.TYPE !== "HTTPS" &&
+	process.env.TYPE !== "TEST" &&
+	process.env.NODE_ENV !== "production"
+) {
+	// Listening to the server
+	app.listen(PORT, () => {
+		console.log(`App is listening at ${PORT}`);
+	});
+}
 
 app.get("*", (req, res) => {
 	res.send("Path not found");
-})
+});
 
+module.exports = app;
 // End of code.

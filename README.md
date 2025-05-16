@@ -4,6 +4,9 @@
 
 स्वर्णिम भारत is a React-based web application showcasing the rich heritage of India. This project aims to provide an interactive and informative platform for users to explore India's cultural diversity, historical landmarks, and traditional heritage.
 
+## Website
+
+Visit स्वर्णिम भारत at //pending
 
 ## Features
 

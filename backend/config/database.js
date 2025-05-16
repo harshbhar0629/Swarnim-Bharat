@@ -2,9 +2,14 @@
 
 const mongoose = require("mongoose");
 
+const MONGO_URL =
+	process.env.NODE_ENV !== "production"
+		? process.env.MONGODB_URL
+		: process.env.MONGO_URL;
+
 exports.dbConnect = () => {
 	mongoose
-		.connect(process.env.MONGODB_URL, {
+		.connect(MONGO_URL, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		})
