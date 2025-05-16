@@ -6,7 +6,7 @@
 
 ## Website
 
-Visit स्वर्णिम भारत at //pending
+Visit स्वर्णिम भारत at https://swarnim-bharat-ruddy.vercel.app/home
 
 ## Features
 
